@@ -1,0 +1,30 @@
+import '@cds/core/alert/register.js';
+import { Meta, Story, Preview, API } from '@storybook/addon-docs/blocks';
+import { html, LitElement } from 'lit-element';
+
+<Meta title="Foundation/Color/Getting Started" />
+
+# Color
+
+## Installation
+
+To use the color tokens import the global CSS.
+
+```scss
+// import into sass or css
+@import '~@cds/core/global.min';
+
+// or import in html
+<link href="/node_modules/@cds/core/global.min.css" rel="stylesheet">
+```
+
+## Usage
+
+```css
+.my-element {
+  background: var(--cds-token-color-action-1000);
+  color: var(--cds-token-color-neutral-0);
+}
+```
+
+<Story id="foundation-design-tokens-stories--color" />
