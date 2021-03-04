@@ -31,7 +31,7 @@ Match a company or client’s unique brand identity with **color theming** at **
 
 <ClrImage width="100%" alt="Clarity Icons API" src="/images/foundation/themes/theme-icons.svg" />
 
-**Font customization** and the [Clarity Icons API](/foundation/icons/api) offer the power to reinforce identity at the most fundamental levels of user experience.
+**Font customizations** and the [Clarity Icons API](/foundation/icons/api) offer the power to reinforce identity at the most fundamental levels of user experience.
 
 </div>
 
@@ -39,7 +39,7 @@ Match a company or client’s unique brand identity with **color theming** at **
 
 <ClrImage width="100%" alt="Theme information density" src="/images/foundation/themes/theme-info.svg" />
 
-Depending on users’ expectations, different applications may require different degrees of **information density**. Clarity themes can be adjusted to make an application as **sparse or compact** as it needs to be.
+Users’ expectations are different applications may require different degrees of **information density**. Clarity themes can be adjusted to make an application as **sparse or compact** as it needs to be.
 
 </div>
 </div>
