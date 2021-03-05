@@ -31,5 +31,6 @@ When submitting issues please provide a minimal app that demonstrates the issue 
 Ask questions on [GitHub Discussions](https://github.com/vmware/clarity/discussions) to get help with your project. You can also view previous discussions that might answer your questions or even share news about your successes!
 
 ## Attributions
+test
 
 See the [legal attributions](https://github.com/vmware/clarity/blob/master/docs/ATTRIBUTION.md) for third party software included in Clarity.
