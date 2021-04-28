@@ -1,0 +1,36 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "resolveJsonModule": true,
+    "types": ["node"],
+    "paths": {
+      "@clr/angular": ["dist/clr-angular"],
+      "@clr/angular/*": ["dist/clr-angular/*"],
+      "@cds/angular": ["dist/angular"],
+      "@cds/angular/*": ["dist/angular/*"]
+    }
+  },
+  "files": ["src/main.ts", "src/polyfills.ts"],
+  "include": ["src/**/*.d.ts"]
+}
+
+// {
+//   "extends": "../../tsconfig.json",
+//   "compilerOptions": {
+//     "outDir": "../../out-tsc/app",
+//     "resolveJsonModule": true,
+//     "types": ["node"],
+//     "paths": {
+//       "@clr/angular": ["dist/clr-angular"],
+//       "@clr/angular/*": ["dist/clr-angular/*"],
+//       "@cds/angular": ["dist/angular"],
+//       "@cds/angular/*": ["dist/angular/*"]
+//     }
+//   },
+//   "files": ["src/main.ts", "src/polyfills.ts"],
+//   "include": ["src/**/*.d.ts"],
+//   "angularCompilerOptions": {
+//     "enableIvy": false
+//   }
+// }

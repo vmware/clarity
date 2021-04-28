@@ -341,6 +341,120 @@
           }
         }
       }
+    },
+    "website-classic": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "inlineTemplate": true,
+          "inlineStyle": true,
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:module": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        }
+      },
+      "root": "projects/website-classic",
+      "sourceRoot": "projects/website-classic/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "../../dist/website-classic",
+            "index": "projects/website-classic/src/index.html",
+            "main": "projects/website-classic/src/main.ts",
+            "polyfills": "projects/website-classic/src/polyfills.ts",
+            "tsConfig": "projects/website-classic/tsconfig.app.json",
+            "aot": true,
+            "assets": [
+              "projects/website-classic/src/favicon.ico",
+              "projects/website-classic/src/manifest.json",
+              "projects/website-classic/src/sitemap.xml",
+              "projects/website-classic/src/robots.txt",
+              {
+                "glob": "versions.json",
+                "input": "projects/website-classic/src/settings/",
+                "output": "/"
+              },
+              "projects/website-classic/src/assets"
+            ],
+            "styles": [
+              "node_modules/prismjs/themes/prism-solarizedlight.css",
+              "projects/clr-angular/src/main.scss",
+              "node_modules/@clr/icons/clr-icons.min.css",
+              "projects/website-classic/src/styles/main.scss"
+            ],
+            "scripts": ["node_modules/prismjs/prism.js", "node_modules/prismjs/components/prism-typescript.min.js"]
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/website-classic/src/environments/environment.ts",
+                  "with": "projects/website-classic/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "website:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "website:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "website:build"
+          }
+        }
+      }
     }
   },
   "defaultProject": "dev"

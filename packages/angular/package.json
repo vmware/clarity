@@ -26,6 +26,8 @@
     "generate:core-ng-modules": "node ../../scripts/core-ng-module-generator && prettier --write ./projects/cds-angular/src/cds",
     "dev": "ng build dev --prod --progress=false",
     "dev:dark": "ng build dev -c dark --prod --progress=false",
+    "website-classic:news": "node ./projects/website-classic/generate-news.js",
+    "website-classic:build": "ng build website-classic --prod",
     "test": "npm-run-all test:unit:clr test:unit:cds test:golden",
     "test:unit:clr": "ng test clr-angular --watch false --source-map=false",
     "test:unit:cds": "ng test cds-angular --watch false  --source-map=false",
@@ -55,7 +57,9 @@
     "@clr/angular": "./dist/clr-angular",
     "@clr/icons": "./dist/clr-icons",
     "@clr/ui": "./dist/clr-ui",
+    "@sentry/browser": "^5.21.1",
     "css-vars-ponyfill": "2.3.1",
+    "jump.js": "^1.0.2",
     "rxjs": "6.5.4",
     "tslib": "^2.0.0",
     "zone.js": "0.10.3",
@@ -115,7 +119,8 @@
     "ts-api-guardian": "0.6.0",
     "ts-node": "8.3.0",
     "tsconfig-paths-webpack-plugin": "3.2.0",
-    "typescript": "4.1.5"
+    "typescript": "4.1.5",
+    "xml-js": "^1.6.11"
   },
   "browserslist": [
     "> 0.5%",

@@ -89,6 +89,8 @@
     "website:start": "yarn --cwd apps/website run start",
     "website:lint": "yarn --cwd app/website run lint",
     "website:functions": "netlify-lambda build scripts/netlify",
+    "website-classic:news": "yarn --cwd packages/angular run website-classic:news",
+    "website-classic:build": "yarn --cwd packages/angular run website-classic:build",
     "tool:audit-website": "yarn --cwd tools/audit-website run start",
     "tool:link-checker": "yarn --cwd tools/link-checker run start",
     "eslint-rule:lint": "yarn --cwd packages/eslint-plugin-clarity-adoption lint",
