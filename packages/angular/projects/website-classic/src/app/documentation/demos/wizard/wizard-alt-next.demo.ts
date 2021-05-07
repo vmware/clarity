@@ -16,12 +16,12 @@ export class WizardAltNextDemo implements OnInit {
   @ViewChild('wizard', { static: true })
   wizard: ClrWizard;
 
-  open: boolean = false;
-  showCancelConfirm: boolean = false;
+  open = false;
+  showCancelConfirm = false;
 
   public model: any;
-  public stressText: boolean = false;
-  public errorFlag: boolean = false;
+  public stressText = false;
+  public errorFlag = false;
 
   public ngOnInit() {
     this.model = {
@@ -68,7 +68,7 @@ export class WizardAltNextDemo implements OnInit {
     }
   }
 
-  code: string = `
+  code = `
 import { Component, ViewChild, OnInit } from "@angular/core";
 import { ClrWizard } from "@clr/angular";
 
@@ -129,7 +129,7 @@ export class WizardAltNextDemo implements OnInit {
 }
 `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard
     [(clrWizardOpen)]="open"
     [clrWizardSize]="'lg'"

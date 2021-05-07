@@ -6,10 +6,10 @@
 import { COMPONENT_MAP } from '../../utils/component-list';
 
 export class ClarityDocComponent {
-  ui: number = -1;
-  ng: number = -1;
-  title: string = '';
-  newLayout: boolean = false;
+  ui = -1;
+  ng = -1;
+  title = '';
+  newLayout = false;
 
   constructor(componentName: string) {
     const component = COMPONENT_MAP.get(componentName);

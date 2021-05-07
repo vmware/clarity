@@ -24,7 +24,7 @@ const EXAMPLE = `
 })
 export class ModalAngularShowDemo {
   // Booleans to open each example modal
-  public basic: boolean = false;
+  public basic = false;
 
   example = EXAMPLE;
 }

@@ -29,13 +29,13 @@ export class DatagridDemo extends ClarityDocComponent implements OnInit, OnDestr
 
   childRoutes: Route[];
 
-  previous: boolean = false;
-  next: boolean = false;
+  previous = false;
+  next = false;
 
   previousRoute: Route;
   nextRoute: Route;
 
-  parentRoute: string = '';
+  parentRoute = '';
 
   ngOnInit() {
     const tempArr: any[] = this.route.routeConfig.children;

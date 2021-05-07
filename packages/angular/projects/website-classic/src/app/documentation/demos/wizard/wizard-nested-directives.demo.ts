@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
   template: ` <clr-code-snippet [clrLanguage]="'html'" [clrCode]="html"></clr-code-snippet> `,
 })
 export class WizardNestedDirectiveDemo {
-  html: string = `<clr-wizard #wizard [(clrWizardOpen)]="open">
+  html = `<clr-wizard #wizard [(clrWizardOpen)]="open">
     <clr-wizard-title>Wizard Title</clr-wizard-title>
 
     <clr-wizard-button type="cancel">Cancel</clr-wizard-button>

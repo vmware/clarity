@@ -36,7 +36,7 @@ export class FragmentContentComponent implements AfterViewInit, OnDestroy {
     private _renderer: Renderer2,
     private _route: ActivatedRoute,
     private _activeFragmentService: ActiveFragmentService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Record<string, any>
   ) {}
 
   private subscriptions: Subscription[] = [];

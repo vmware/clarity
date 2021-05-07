@@ -15,7 +15,7 @@ import { ClarityDocComponent } from '../clarity-doc';
   },
 })
 export class ModalDemo extends ClarityDocComponent {
-  expanded: boolean = false;
+  expanded = false;
 
   constructor() {
     super('modals');

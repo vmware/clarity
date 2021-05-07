@@ -15,8 +15,8 @@ import { ClarityDocComponent } from '../clarity-doc';
   },
 })
 export class LabelsDemo extends ClarityDocComponent {
-  hideJames: boolean = false;
-  hideJimmy: boolean = false;
+  hideJames = false;
+  hideJimmy = false;
 
   constructor() {
     super('labels');

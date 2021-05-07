@@ -15,7 +15,7 @@ export class WizardNoCancel {
   @ViewChild('wizard', { static: true })
   wizard: ClrWizard;
 
-  open: boolean = false;
+  open = false;
 
   pageArray: string[] = ['1', '2', '3'];
 
@@ -24,7 +24,7 @@ export class WizardNoCancel {
     this.wizard.reset();
   }
 
-  code: string = `
+  code = `
 @Component({
     ...
 })
@@ -40,7 +40,7 @@ export class WizardNoCancel {
 }
 `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard [(clrWizardOpen)]="open"
     [clrWizardClosable]="false"
     [clrWizardSize]="'md'"

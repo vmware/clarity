@@ -22,10 +22,10 @@ const EXAMPLE = `
   templateUrl: './modal-animation.demo.html',
 })
 export class ModalAnimationDemo implements OnInit {
-  animatedExampleIn: boolean = false;
+  animatedExampleIn = false;
   interval: any;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Record<string, any>) {}
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {

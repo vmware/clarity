@@ -15,7 +15,7 @@ export class WizardCustomButtonsDemo {
   @ViewChild('wizard', { static: true })
   wizard: ClrWizard;
 
-  open: boolean = false;
+  open = false;
 
   public handleDangerClick(): void {
     this.wizard.finish();
@@ -37,7 +37,7 @@ export class WizardCustomButtonsDemo {
     }
   }
 
-  code: string = `
+  code = `
 import { Component, ViewChild } from "@angular/core";
 import { ClrWizard } from "@clr/angular";
 
@@ -69,7 +69,7 @@ export class WizardCustomButtonsDemo {
 }
 `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard [(clrWizardOpen)]="open" [clrWizardSize]="'lg'">
 
     <clr-wizard-title>Custom and default buttons</clr-wizard-title>

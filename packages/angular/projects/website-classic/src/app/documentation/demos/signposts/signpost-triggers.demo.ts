@@ -20,7 +20,7 @@ export class SignpostTriggersDemo extends ClarityDocComponent {
     super('signposts');
   }
 
-  html: string = `
+  html = `
 <div class="signpost-triggers-wrapper">
     <div class="signpost-trigger-demo">
         <div class="signpost-item">

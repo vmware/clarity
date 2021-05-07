@@ -30,13 +30,13 @@ export class VerticalNavDemo extends ClarityDocComponent implements OnInit, OnDe
 
   childRoutes: Route[];
 
-  previous: boolean = false;
-  next: boolean = false;
+  previous = false;
+  next = false;
 
   previousRoute: Route;
   nextRoute: Route;
 
-  parentRoute: string = '';
+  parentRoute = '';
 
   ngOnInit() {
     const tempArr: any[] = this.route.routeConfig.children;

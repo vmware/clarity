@@ -11,10 +11,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './progress-bar-static.html',
 })
 export class ProgressBarStaticDemo implements OnInit {
-  staticProgbarValue: number = 0;
-  staticDangerValue: number = 0;
-  staticSuccessValue: number = 0;
-  staticLabeledProgbarValue: number = 0;
+  staticProgbarValue = 0;
+  staticDangerValue = 0;
+  staticSuccessValue = 0;
+  staticLabeledProgbarValue = 0;
 
   getNewValue(): number {
     const random: number = Math.floor(Math.random() * 98) + 1;

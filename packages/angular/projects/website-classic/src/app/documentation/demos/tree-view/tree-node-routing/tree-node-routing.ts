@@ -38,7 +38,7 @@ const EXAMPLE_HTML = `
 export class TreeNodeRoutingDemo {
   exampleHtml = EXAMPLE_HTML;
 
-  pane: number = 0;
+  pane = 0;
 
   showPane(pane: number) {
     this.pane = pane;

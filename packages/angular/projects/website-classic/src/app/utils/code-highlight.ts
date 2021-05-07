@@ -6,15 +6,19 @@
 import { isPlatformBrowser } from '@angular/common';
 import { Directive, ElementRef, Inject, Input, PLATFORM_ID, Renderer2 } from '@angular/core';
 
-declare var Prism: any;
+declare let Prism: any;
 
 @Directive({ selector: 'code[clr-code-highlight]' })
 export class CodeHighlight {
-  private _highlight: string = '';
+  private _highlight = '';
 
   // Had to use renderer because I wanted to add to existing classes on the code block
   // Didn't want to override them completely
-  constructor(private _el: ElementRef, private renderer: Renderer2, @Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(
+    private _el: ElementRef,
+    private renderer: Renderer2,
+    @Inject(PLATFORM_ID) private platformId: Record<string, any>
+  ) {}
 
   ngAfterContentInit(): void {
     this.redraw();

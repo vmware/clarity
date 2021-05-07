@@ -20,9 +20,9 @@ export class SignpostDemo extends ClarityDocComponent {
     super('signposts');
   }
 
-  openState: boolean = false;
+  openState = false;
 
-  html: string = `
+  html = `
 <clr-signpost>
     <clr-signpost-content *clrIfOpen>
         <h3>Default Signpost</h3>

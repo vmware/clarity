@@ -34,7 +34,7 @@ export class DatepickerTemplateDrivenFormsDemo {
   styleUrls: ['../datepicker.demo.scss'],
 })
 export class DatepickerTemplateDrivenFormsDemo {
-  date: string = '01/02/2015';
+  date = '01/02/2015';
 
   htmlExample = HTML_EXAMPLE;
   tsExample = TS_EXAMPLE;

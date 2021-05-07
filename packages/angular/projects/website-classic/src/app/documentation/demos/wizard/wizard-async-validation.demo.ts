@@ -16,10 +16,10 @@ export class WizardAsyncValidation {
   @ViewChild('myForm', { static: true })
   formData: any;
 
-  loadingFlag: boolean = false;
-  errorFlag: boolean = false;
+  loadingFlag = false;
+  errorFlag = false;
   answer: number = null;
-  open: boolean = false;
+  open = false;
 
   // have to define doCancel because page will prevent doCancel from working
   // if the page had a previous button, you would need to call
@@ -43,7 +43,7 @@ export class WizardAsyncValidation {
     }, 1000);
   }
 
-  code: string = `
+  code = `
 import { Component, ViewChild } from "@angular/core";
 import { ClrWizard } from "@clr/angular";
 
@@ -81,7 +81,7 @@ export class WizardAsyncValidation {
 }
 `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard [(clrWizardOpen)]="open">
   <clr-wizard-title>Async validation</clr-wizard-title>
 

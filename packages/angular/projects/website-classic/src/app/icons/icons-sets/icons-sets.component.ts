@@ -64,7 +64,7 @@ export class IconsSetsComponent implements AfterViewInit, OnDestroy {
   previewClasses: any;
 
   // When jumping to a fragment, leverage some space between window top and the fragment
-  fragmentOffset: number = 192;
+  fragmentOffset = 192;
 
   @ViewChildren(FragmentContentComponent) fragmentContentElRef: QueryList<FragmentContentComponent>;
 
@@ -76,7 +76,7 @@ export class IconsSetsComponent implements AfterViewInit, OnDestroy {
     private _iconsViewService: IconsViewService,
     private _renderer: Renderer2,
     private _activeFragmentService: ActiveFragmentService,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Record<string, any>
   ) {
     this.subscriptions.push(
       this._iconsViewService.previewClasses.subscribe(newPreviewClasses => {

@@ -56,6 +56,6 @@ export class CollapsibleNavDemo {
   htmlExample = HTML_EXAMPLE;
   htmlExample1 = HTML_EXAMPLE_1;
 
-  collapsible: boolean = true;
-  collapsed: boolean = false;
+  collapsible = true;
+  collapsed = false;
 }

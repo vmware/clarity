@@ -25,6 +25,6 @@ const EXAMPLE = `
 })
 export class ModalAngularNotClosableDemo {
   // Booleans to open each example modal
-  public closable: boolean = false;
+  public closable = false;
   example = EXAMPLE;
 }

@@ -53,7 +53,7 @@ export class DatagridHideShowColumnsDemo {
   example = EXAMPLE;
   customToggle = CUSTOM_TOGGLE;
   users: User[];
-  currentPageSize: number = 10;
+  currentPageSize = 10;
 
   constructor(inventory: Inventory) {
     inventory.size = 10;

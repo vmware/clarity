@@ -19,7 +19,7 @@ registerLocaleData(localeFr);
   },
 })
 export class DatepickerDemo extends ClarityDocComponent {
-  expanded: boolean = true;
+  expanded = true;
 
   constructor() {
     super('datepicker');

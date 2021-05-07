@@ -32,5 +32,5 @@ export class TreeNodeLabelChangeOnExpandDemo {
   exampleHtml = EXAMPLE_HTML;
   exampleTs = EXAMPLE_TS;
 
-  expanded: boolean = true;
+  expanded = true;
 }

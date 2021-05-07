@@ -18,5 +18,5 @@ import * as CONTRIBUTORS from '../../community/contributors.json';
 export class CommunityComponent {
   team: any[] = CLARITYTEAM.members;
   contributors: string[] = CONTRIBUTORS.contributors;
-  teamImgUrl: string = 'assets/images/team/';
+  teamImgUrl = 'assets/images/team/';
 }

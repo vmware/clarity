@@ -19,11 +19,11 @@ export class ColorSchemeDonut {
 
   constructor(private clipboardCopy: ClipboardCopyService) {}
 
-  copyContent: string = '';
+  copyContent = '';
 
   donutHoleRadius: number;
 
-  activeColor: string = '';
+  activeColor = '';
 
   private _scheme: any;
 
@@ -38,7 +38,7 @@ export class ColorSchemeDonut {
     this.donutHoleRadius = this.radius - 8;
   }
 
-  private _activeIndex: number = -1;
+  private _activeIndex = -1;
 
   get activeIndex(): number {
     return this._activeIndex;

@@ -14,8 +14,8 @@ import { ClrWizard } from '@clr/angular';
 export class WizardDesignSizeDemo {
   @ViewChild('wizard', { static: true })
   wizard: ClrWizard;
-  open: boolean = false;
-  size: string = 'xl';
+  open = false;
+  size = 'xl';
 
   get textSize(): string {
     let returnVal = 'X-Large';

@@ -11,8 +11,8 @@ import { Component } from '@angular/core';
 })
 export class ModalSizeDesignDemo {
   // Booleans to open each example modal
-  public small: boolean = false;
-  public medium: boolean = false;
-  public large: boolean = false;
-  public extraLarge: boolean = false;
+  public small = false;
+  public medium = false;
+  public large = false;
+  public extraLarge = false;
 }

@@ -15,8 +15,8 @@ import { ClrWizard } from '@clr/angular';
 export class WizardSimple {
   @ViewChild('wizard', { static: true })
   wizard: ClrWizard;
-  skipStepTwo: boolean = true;
-  _open: boolean = false;
+  skipStepTwo = true;
+  _open = false;
 
   toggleStepTwo() {
     this.skipStepTwo = !this.skipStepTwo;
@@ -26,7 +26,7 @@ export class WizardSimple {
     this._open = !this.open;
   }
 
-  code: string = `
+  code = `
 @Component({
     ...
 })
@@ -45,7 +45,7 @@ export class WizardSimple {
 }
     `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard [(clrWizardOpen)]="_open">
     <clr-wizard-title>Skipping Page Two</clr-wizard-title>
 

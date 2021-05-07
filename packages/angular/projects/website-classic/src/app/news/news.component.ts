@@ -44,7 +44,7 @@ export class NewsComponent implements OnDestroy, AfterViewInit {
 
   private _subscriptions: Subscription[] = [];
 
-  private _hasIcons: boolean = false;
+  private _hasIcons = false;
 
   get hasIcons(): boolean {
     return this._hasIcons;
@@ -54,7 +54,7 @@ export class NewsComponent implements OnDestroy, AfterViewInit {
     this._hasIcons = value;
   }
 
-  private _hasGitHub: boolean = false;
+  private _hasGitHub = false;
 
   get hasGitHub(): boolean {
     return this._hasGitHub;

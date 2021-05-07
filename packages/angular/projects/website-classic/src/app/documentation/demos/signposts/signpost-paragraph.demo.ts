@@ -19,9 +19,9 @@ export class SignpostParagraphDemo extends ClarityDocComponent {
     super('signposts');
   }
 
-  openState: boolean = false;
+  openState = false;
 
-  code: string = `
+  code = `
 import {Component} from "@angular/core";
 
 @Component({
@@ -33,7 +33,7 @@ export class MyClass {
     public openState: boolean = false;
 }
     `;
-  html: string = `
+  html = `
 <p>Signposts should be used when you want to show a small amount of contextual help
     of information without taking the user out of the current context.
      Use sparingly as a supplemental element and not as a primary method of adding detail.

@@ -25,9 +25,9 @@ const EXAMPLE = `
 })
 export class ModalAngularSizeDemo {
   // Booleans to open each example modal
-  public small: boolean = false;
-  public large: boolean = false;
-  public extraLarge: boolean = false;
+  public small = false;
+  public large = false;
+  public extraLarge = false;
 
   example = EXAMPLE;
 }

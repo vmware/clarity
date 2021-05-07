@@ -22,8 +22,8 @@ import { DisableFocusTrap } from '../../utils/disable-focus-trap';
   ],
 })
 export class AlertsDemo extends ClarityDocComponent {
-  expanded: boolean = false;
-  basic: boolean = true;
+  expanded = false;
+  basic = true;
 
   constructor() {
     super('alerts');

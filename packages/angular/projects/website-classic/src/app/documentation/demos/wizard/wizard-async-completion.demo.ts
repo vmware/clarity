@@ -18,11 +18,11 @@ export class WizardAsyncCompletion {
   @ViewChild('myFinishPage', { static: true })
   finishPage: ClrWizardPage;
 
-  loadingFlag: boolean = false;
-  errorFlag: boolean = false;
+  loadingFlag = false;
+  errorFlag = false;
   checked = false;
   finished = false;
-  open: boolean = false;
+  open = false;
   answer: number = null;
 
   // have to define doCancel because page will prevent doCancel from working
@@ -73,7 +73,7 @@ export class WizardAsyncCompletion {
     }, 1000);
   }
 
-  code: string = `import { ClrWizard, ClrWizard } from "@clr/angular";
+  code = `import { ClrWizard, ClrWizard } from "@clr/angular";
 
 @Component({
     ...
@@ -140,7 +140,7 @@ export class WizardAsyncCompletion {
 }
 `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard [(clrWizardOpen)]="open" (clrWizardCurrentPageChanged)="resetFinalPage()">
     <clr-wizard-title>Async validation on completion</clr-wizard-title>
 

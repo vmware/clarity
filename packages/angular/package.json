@@ -14,7 +14,7 @@
     "start:stmux:dev": "stmux -w always -e ERROR -m beep,system [ \"yarn start:dev\" : \"sleep 25 && yarn serve:watch\" : \"yarn --cwd ../ui run build:watch\" ]",
     "storybook": "start-storybook -s .storybook/public -p 6006",
     "storybook:build": "build-storybook -s .storybook/public -c .storybook -o ../../dist/website/storybook/angular --quiet",
-    "build": "npm-run-all build:lib:cds build:lib:clr build:update:cds build:update:clr",
+    "build": "npm-run-all build:lib:cds build:lib:clr build:update:cds build:update:clr website-classic:build",
     "build:preinstall": "yarn run build:preinstall:cds && yarn run build:preinstall:clr",
     "build:preinstall:cds": "mkdir -p ../../dist/angular/ && cp ./projects/cds-angular/package.json ../../dist/angular/",
     "build:preinstall:clr": "mkdir -p ../../dist/clr-angular/ && cp ./projects/clr-angular/package.json ../../dist/clr-angular/",

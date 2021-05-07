@@ -32,7 +32,7 @@ export class VersionSwitcherComponent {
     private http: HttpClient,
     private route: ActivatedRoute,
     private router: Router,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Record<string, any>
   ) {
     this.subscription = this.router.events.subscribe(e => {
       if (e instanceof NavigationEnd) {

@@ -143,5 +143,5 @@ const ROUTES_EXAMPLE = `
 export class NavGroupsParentLinksVerticalNavDemo {
   htmlExample = HTML_EXAMPLE;
   routesExample = ROUTES_EXAMPLE;
-  demoCollapsible: boolean = true;
+  demoCollapsible = true;
 }

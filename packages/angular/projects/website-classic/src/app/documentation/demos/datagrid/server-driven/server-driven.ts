@@ -20,7 +20,7 @@ export class DatagridServerDrivenDemo {
   examples = EXAMPLES;
   users: User[];
   total: number;
-  loading: boolean = true;
+  loading = true;
 
   constructor(private inventory: Inventory) {
     inventory.size = 103;

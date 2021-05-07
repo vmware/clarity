@@ -5,8 +5,8 @@
  */
 export class ProgBarExample {
   intervalId: any;
-  value: number = 0;
-  intervalTimeInMs: number = 450;
+  value = 0;
+  intervalTimeInMs = 450;
   running = false;
   complete = false;
 
@@ -51,8 +51,8 @@ export class ProgBarExample {
 
   run(): void {
     let myProgress: number = this.value;
-    const maxProgressIncrement: number = 15;
-    const minProgressIncrement: number = 4;
+    const maxProgressIncrement = 15;
+    const minProgressIncrement = 4;
     this.running = true;
     this.complete = false;
 

@@ -55,7 +55,7 @@ export class DatagridFixedHeightDemo {
   style = STYLE;
   users: User[];
   usersLimited: User[];
-  currentPageSize: number = 10;
+  currentPageSize = 10;
 
   constructor(inventory: Inventory) {
     inventory.size = 10;

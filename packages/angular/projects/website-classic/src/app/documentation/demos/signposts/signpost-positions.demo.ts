@@ -34,8 +34,8 @@ export class SignpostPositionsDemo extends ClarityDocComponent {
     'left-middle',
     'left-bottom',
   ];
-  position: string = 'right-middle';
-  html: string = `
+  position = 'right-middle';
+  html = `
 <clr-select-container>
   <label>Select a position:</label>
   <select clrSelect name="position" [(ngModel)]="position">
@@ -49,7 +49,7 @@ export class SignpostPositionsDemo extends ClarityDocComponent {
   </clr-signpost-content>
 </clr-signpost>
     `;
-  code: string = `
+  code = `
 @Component({
     ...
 })

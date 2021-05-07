@@ -17,7 +17,7 @@ const EXAMPLE = `
 })
 export class ModalAngularStaticBackdropDemo {
   // Booleans to open each example modal
-  public static: boolean = false;
+  public static = false;
 
   example = EXAMPLE;
 }

@@ -19,7 +19,7 @@ export class WizardJumpToDemo {
   @ViewChild('pageFive', { static: true })
   pageFive: ClrWizardPage;
 
-  open: boolean = false;
+  open = false;
 
   public jumpTo(page: ClrWizardPage) {
     if (page && page.completed) {
@@ -38,7 +38,7 @@ export class WizardJumpToDemo {
     this.jumpTo(this.pageFive);
   }
 
-  code: string = `
+  code = `
 import { Component, ViewChild } from "@angular/core";
 import { ClrWizard, ClrWizardPage } from "@clr/angular";
 
@@ -69,7 +69,7 @@ export class WizardJumpToDemo {
 }
     `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard [(clrWizardOpen)]="open" [clrWizardSize]="'md'">
     <clr-wizard-title>Jump-To Wizard</clr-wizard-title>
 

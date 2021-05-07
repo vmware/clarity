@@ -16,5 +16,5 @@ import { DisableFocusTrap } from '../../utils/disable-focus-trap';
   providers: [{ provide: ÇlrFocusTrapTracker, useClass: DisableFocusTrap }],
 })
 export class ModalStyleDesignDemo {
-  public basic: boolean = true;
+  public basic = true;
 }

@@ -14,7 +14,7 @@ import { isPlatformBrowser } from '@angular/common';
 export class ClipboardCopyService {
   private textareaEl: HTMLTextAreaElement;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Record<string, any>) {}
 
   private createTextareaEl() {
     this.textareaEl = document.createElement('textarea');

@@ -11,6 +11,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['../vertical-nav.demo.scss'],
 })
 export class CollapsibleVerticalNavDemo {
-  @Input() demoHideIcons: boolean = false;
-  @Input() demoCollapsed: boolean = false;
+  @Input() demoHideIcons = false;
+  @Input() demoCollapsed = false;
 }

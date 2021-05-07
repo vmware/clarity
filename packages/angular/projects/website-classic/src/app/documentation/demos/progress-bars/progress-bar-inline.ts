@@ -11,13 +11,13 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   templateUrl: './progress-bar-inline.html',
 })
 export class ProgressBarInlineDemo implements OnInit, OnDestroy {
-  inlineProgress: number = 0;
+  inlineProgress = 0;
   inlineProgressTimerId: any = -1;
 
-  inlineStaticProgbarValue: number = 0;
-  staticDangerValue: number = 0;
-  staticSuccessValue: number = 0;
-  staticLabeledProgbarValue: number = 0;
+  inlineStaticProgbarValue = 0;
+  staticDangerValue = 0;
+  staticSuccessValue = 0;
+  staticLabeledProgbarValue = 0;
 
   getNewValue(): number {
     const random: number = Math.floor(Math.random() * 98) + 1;

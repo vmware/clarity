@@ -15,13 +15,13 @@ export class WizardForceForwardDemo {
   @ViewChild('wizard', { static: true })
   wizard: ClrWizard;
 
-  _open: boolean = false;
+  _open = false;
 
   open() {
     this._open = !this.open;
   }
 
-  code: string = `import { ClrWizard } from "@clr/angular";
+  code = `import { ClrWizard } from "@clr/angular";
 
 @Component({
     ...
@@ -36,7 +36,7 @@ export class WizardForceForwardDemo {
 }
     `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard [(clrWizardOpen)]="_open" [clrWizardForceForwardNavigation]="true">
     <clr-wizard-title>Wizard, Only Forward Navigation</clr-wizard-title>
 

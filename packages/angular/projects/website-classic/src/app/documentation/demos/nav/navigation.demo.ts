@@ -15,7 +15,7 @@ import { ClarityDocComponent } from '../clarity-doc';
   },
 })
 export class NavigationDemo extends ClarityDocComponent {
-  expanded: boolean = false;
+  expanded = false;
 
   constructor() {
     super('navigation');

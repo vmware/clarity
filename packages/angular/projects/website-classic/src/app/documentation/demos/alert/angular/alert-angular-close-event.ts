@@ -32,7 +32,7 @@ export class AlertAngularDemo  {
   templateUrl: './alert-angular-close-event.demo.html',
 })
 export class AlertAngularCloseEventDemo {
-  closeMessage: string = '';
+  closeMessage = '';
   htmlExample = HTML_EXAMPLE;
   tsExample = TS_EXAMPLE;
 

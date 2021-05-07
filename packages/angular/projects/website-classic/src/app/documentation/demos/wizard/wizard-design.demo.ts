@@ -98,7 +98,7 @@ export class WizardDesignDemo {
   @ViewChild('number', { static: true })
   numberField: any;
 
-  open: boolean = true;
+  open = true;
 
   reset(val: boolean): void {
     this.open = val;

@@ -11,10 +11,10 @@ import { isPlatformBrowser } from '@angular/common';
   templateUrl: './modal-animation-design.demo.html',
 })
 export class ModalAnimationDesignDemo implements OnInit {
-  animatedExampleIn: boolean = false;
+  animatedExampleIn = false;
   interval: any;
 
-  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+  constructor(@Inject(PLATFORM_ID) private platformId: Record<string, any>) {}
 
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {

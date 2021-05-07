@@ -11,6 +11,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['../vertical-nav.demo.scss'],
 })
 export class VerticalNavIconsDemo {
-  @Input() demoHideIcons: boolean = false;
-  @Input() demoLongLabel: boolean = false;
+  @Input() demoHideIcons = false;
+  @Input() demoLongLabel = false;
 }

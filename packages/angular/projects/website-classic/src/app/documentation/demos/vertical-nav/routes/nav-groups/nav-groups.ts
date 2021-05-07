@@ -117,5 +117,5 @@ const ROUTES_EXAMPLE = `
 export class VerticalNavGroupsDemo {
   htmlExample = HTML_EXAMPLE;
   routesExample = ROUTES_EXAMPLE;
-  demoCollapsible: boolean = true;
+  demoCollapsible = true;
 }

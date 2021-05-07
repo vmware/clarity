@@ -74,9 +74,9 @@ export class SpinnerComponentDemo {
   ];
 
   // Triggers
-  fetchingUserInformation: boolean = false;
-  downloadingFile: boolean = false;
-  downloadinInvoice: boolean = false;
+  fetchingUserInformation = false;
+  downloadingFile = false;
+  downloadinInvoice = false;
 
   public toggleProgressBar(name: string) {
     return (this[name] = !this[name]);

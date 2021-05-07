@@ -74,7 +74,7 @@ export class IconsComponent implements AfterViewInit, OnDestroy {
     private _router: Router,
     private _iconsViewService: IconsViewService,
     private _renderer: Renderer2,
-    @Inject(PLATFORM_ID) private platformId: Object
+    @Inject(PLATFORM_ID) private platformId: Record<string, any>
   ) {
     this._subscriptions.push(
       this._router.events.pipe(filter(event => event instanceof NavigationEnd)).subscribe(event => {
@@ -103,7 +103,7 @@ export class IconsComponent implements AfterViewInit, OnDestroy {
     return this._isSearchbarSticky;
   }
 
-  searchValue: string = '';
+  searchValue = '';
 
   resetSearchBar() {
     this.searchValue = '';
@@ -186,7 +186,7 @@ export class IconsComponent implements AfterViewInit, OnDestroy {
     this._iconsViewService.previewClasses.next(this.previewClasses);
   }
 
-  private _iconSolidness: boolean = false;
+  private _iconSolidness = false;
 
   get iconSolidness(): boolean {
     return this._iconSolidness;

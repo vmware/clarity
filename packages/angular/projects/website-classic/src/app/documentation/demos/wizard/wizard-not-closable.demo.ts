@@ -14,9 +14,9 @@ export class WizardNotClosable {
   @ViewChild('wizard', { static: true })
   wizard: ClrWizard;
 
-  open: boolean = false;
+  open = false;
 
-  code: string = `
+  code = `
 import { Component, ViewChild } from "@angular/core";
 import { ClrWizard } from "@clr/angular";
 
@@ -29,7 +29,7 @@ export class WizardNotClosableDemo {
 }
 `;
 
-  html: string = `
+  html = `
 <clr-wizard #wizard [(clrWizardOpen)]="open" [clrWizardClosable]="false">
     <clr-wizard-title>Wizard, not closable</clr-wizard-title>
 

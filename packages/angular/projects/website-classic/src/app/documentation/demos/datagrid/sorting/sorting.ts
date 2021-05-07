@@ -21,7 +21,7 @@ export class DatagridSortingDemo {
   users: User[];
   usersDeprecated: User[];
   sortOrder: ClrDatagridSortOrder = ClrDatagridSortOrder.DESC;
-  sorted: boolean = false;
+  sorted = false;
   descSort: ClrDatagridSortOrder = ClrDatagridSortOrder.DESC;
 
   pokemonComparator = new PokemonComparator();

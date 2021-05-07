@@ -15,7 +15,7 @@ import { ClarityDocComponent } from '../clarity-doc';
   },
 })
 export class BadgesDemo extends ClarityDocComponent {
-  expanded: boolean = true;
+  expanded = true;
 
   constructor() {
     super('badges');

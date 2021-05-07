@@ -11,9 +11,9 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './progress-bar-inline-cards.html',
 })
 export class ProgressBarInlineCardsDemo implements OnInit {
-  value1: number = 0;
-  value2: number = 0;
-  value3: number = 0;
+  value1 = 0;
+  value2 = 0;
+  value3 = 0;
 
   getNewValue(): number {
     const random: number = Math.floor(Math.random() * 98) + 1;

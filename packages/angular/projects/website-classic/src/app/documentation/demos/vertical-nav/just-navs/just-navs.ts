@@ -11,7 +11,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['../vertical-nav.demo.scss'],
 })
 export class JustNavsDemo {
-  @Input() demoWithDividers: boolean = false;
-  @Input() demoWithHeadersAndDividers: boolean = false;
-  @Input() demoLongLabel: boolean = false;
+  @Input() demoWithDividers = false;
+  @Input() demoWithHeadersAndDividers = false;
+  @Input() demoLongLabel = false;
 }

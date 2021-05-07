@@ -13,11 +13,11 @@ import { Component, Input } from '@angular/core';
   },
 })
 export class DocWrapper {
-  @Input() title: string = '';
-  @Input() newLayout: boolean = false;
-  @Input() ui: number = 0;
-  @Input() ng: number = 0;
-  @Input() description: string = '';
+  @Input() title = '';
+  @Input() newLayout = false;
+  @Input() ui = 0;
+  @Input() ng = 0;
+  @Input() description = '';
 
   get useNewLayout() {
     return !!this.newLayout;
