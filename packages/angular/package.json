@@ -28,6 +28,7 @@
     "dev:dark": "ng build dev -c dark --prod --progress=false",
     "website-classic:news": "node ./projects/website-classic/generate-news.js",
     "website-classic:build": "ng build website-classic --prod",
+    "website-classic:start": "ng serve website-classic",
     "test": "npm-run-all test:unit:clr test:unit:cds test:golden",
     "test:unit:clr": "ng test clr-angular --watch false --source-map=false",
     "test:unit:cds": "ng test cds-angular --watch false  --source-map=false",
