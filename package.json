@@ -147,5 +147,8 @@
       "pre-commit": "yarn format:fix && yarn license:fix",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "dependencies": {
+    "@types/jsdom": "^16.2.10"
   }
 }
