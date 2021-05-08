@@ -13,6 +13,4 @@ import { Component } from '@angular/core';
     '[class.content-container]': 'true',
   },
 })
-export class PageNotFoundComponent {
-  constructor() {}
-}
+export class PageNotFoundComponent {}

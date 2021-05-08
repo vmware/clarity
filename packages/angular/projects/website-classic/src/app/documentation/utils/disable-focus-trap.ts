@@ -9,7 +9,7 @@ import { Injectable } from '@angular/core';
 export class DisableFocusTrap {
   constructor() {
     try {
-      (<HTMLElement>document.activeElement).blur();
+      (document.activeElement as HTMLElement).blur();
     } catch (e) {
       // Ignore because we're on a platform that doesn't have DOM access like a server
     }
@@ -17,6 +17,10 @@ export class DisableFocusTrap {
   get current() {
     return;
   }
-  set current(value: any) {}
-  activatePreviousTrapper() {}
+  set current(value: any) {
+    // this is empty intentionally
+  }
+  activatePreviousTrapper() {
+    // this is empty intentionally
+  }
 }

@@ -5,7 +5,7 @@
  */
 // tslint:disable
 declare module '*.html' {
-  var _: string;
+  let _: string;
   export default _;
 }
 declare module '!raw-loader!*' {

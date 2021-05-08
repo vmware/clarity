@@ -103,18 +103,6 @@ export class IconsComponent implements AfterViewInit, OnDestroy {
     return this._isSearchbarSticky;
   }
 
-  searchValue = '';
-
-  resetSearchBar() {
-    this.searchValue = '';
-    this._iconsViewService.searchValue.next(this.searchValue);
-  }
-
-  getSearchValue($event: any) {
-    this._iconsViewService.searchValue.next($event.target.value);
-    // this.searchValue = $event.target.value;
-  }
-
   set isSearchbarSticky(value: boolean) {
     // Every time the searchbar changes its state of stickiness, it loses its previous focus state so we save
     // the focus state before searchbar changes its state of stickiness so that if the input was focused,
@@ -128,6 +116,18 @@ export class IconsComponent implements AfterViewInit, OnDestroy {
         this._el.nativeElement.querySelector('#search-icons-sticky').focus();
       }
     });
+  }
+
+  searchValue = '';
+
+  resetSearchBar() {
+    this.searchValue = '';
+    this._iconsViewService.searchValue.next(this.searchValue);
+  }
+
+  getSearchValue($event: any) {
+    this._iconsViewService.searchValue.next($event.target.value);
+    // this.searchValue = $event.target.value;
   }
 
   ngAfterViewInit() {

@@ -16,8 +16,6 @@ import { COMMON_PATH } from '../../icons.component';
   styleUrls: ['./icon-detail-card.component.scss'],
 })
 export class IconDetailCardComponent {
-  constructor() {}
-
   commonPath = COMMON_PATH;
 
   private _clrIcon: string;
@@ -25,10 +23,6 @@ export class IconDetailCardComponent {
   private _clrIconTemplate: string;
   private _clrIconAliases: string[];
   private _activeVariantClasses: string;
-
-  get clrIconSet(): string {
-    return this._clrIconSet;
-  }
 
   get activeVariantClasses(): string {
     return this._activeVariantClasses;
@@ -89,10 +83,6 @@ export class IconDetailCardComponent {
     return this._clrIcon;
   }
 
-  get clrIconAliases(): string[] {
-    return this._clrIconAliases || [];
-  }
-
   @Input()
   set clrIcon(value: string) {
     this._activeVariantClasses = '';
@@ -104,9 +94,17 @@ export class IconDetailCardComponent {
     this.hasSolid = this._clrIconTemplate.indexOf('has-solid') > -1;
   }
 
+  get clrIconSet(): string {
+    return this._clrIconSet;
+  }
+
   @Input()
   set clrIconSet(setName: string) {
     this._clrIconSet = setName;
+  }
+
+  get clrIconAliases(): string[] {
+    return this._clrIconAliases || [];
   }
 
   @Input()

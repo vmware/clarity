@@ -78,16 +78,16 @@ export class DatagridFullDemo {
     if (state.filters) {
       for (const filter of state.filters) {
         if (filter instanceof ColorFilter) {
-          filters.color = (<ColorFilter>filter).listSelected();
+          filters.color = (filter as ColorFilter).listSelected();
         } else {
-          const { property, value } = <{ property: string; value: string }>filter;
+          const { property, value } = filter;
           filters[property] = [value];
         }
       }
     }
     this.inventory
       .filter(filters)
-      .sort(<{ by: string; reverse: boolean }>state.sort)
+      .sort(state.sort as { by: string; reverse: boolean })
       .fetch(
         state.page && state.page.size && state.page.current && state.page.size * (state.page.current - 1),
         state.page && state.page.size

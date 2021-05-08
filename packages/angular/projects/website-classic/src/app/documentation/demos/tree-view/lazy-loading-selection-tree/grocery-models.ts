@@ -63,5 +63,5 @@ export const GROCERY_SERVICE = {
 };
 
 export const ITEMS_SERVICE = {
-  getItems: (group: Group) => timer(1000).pipe(map(() => (<any>group).items)),
+  getItems: (group: Group) => timer(1000).pipe(map(() => (group as any).items)),
 };

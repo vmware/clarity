@@ -107,8 +107,8 @@ export class WizardDesignDemo {
       this.model.name = '';
       this.model.favorite = '';
       this.model.number = '';
-      this.model.ht_feet = '1 ft.';
-      this.model.ht_inches = '0 in.';
+      this.model['ht_feet'] = '1 ft.';
+      this.model['ht_inches'] = '0 in.';
       this.model.weight = '';
       this.model.gender = 'Male';
       this.model.color = 'blue';
@@ -146,8 +146,8 @@ export class WizardDesignDemo {
     name: '',
     favorite: '',
     number: '',
-    ht_feet: '1 ft.',
-    ht_inches: '0 in.',
+    ['ht_feet']: '1 ft.',
+    ['ht_inches']: '0 in.',
     weight: '',
     gender: 'Male',
     color: 'blue',
